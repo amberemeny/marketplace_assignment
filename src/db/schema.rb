@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_25_033436) do
+ActiveRecord::Schema.define(version: 2019_10_28_023108) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,32 @@ ActiveRecord::Schema.define(version: 2019_10_25_033436) do
     t.index ["user_id"], name: "index_addresses_on_user_id"
   end
 
+  create_table "listings", force: :cascade do |t|
+    t.string "name"
+    t.bigint "user_id", null: false
+    t.string "species"
+    t.text "info"
+    t.decimal "price"
+    t.integer "quantity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_listings_on_user_id"
+  end
+
+  create_table "listings_orders", id: false, force: :cascade do |t|
+    t.bigint "listing_id", null: false
+    t.bigint "order_id", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.datetime "datetime"
+    t.boolean "completed"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -38,12 +64,11 @@ ActiveRecord::Schema.define(version: 2019_10_25_033436) do
     t.string "username", null: false
     t.string "fname", null: false
     t.string "lname", null: false
-    t.bigint "address_id"
-    t.index ["address_id"], name: "index_users_on_address_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "addresses", "users"
-  add_foreign_key "users", "addresses"
+  add_foreign_key "listings", "users"
+  add_foreign_key "orders", "users"
 end

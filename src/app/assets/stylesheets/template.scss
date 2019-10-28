@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    header {
+        // background: crimson;
+        #navbar {
+            // background: orangered;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            li {
+                // background: orange;
+                list-style-type: none;
+                display: flex;
+                width: 70%;
+                margin: auto;
+                a {
+                    background: yellow;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    padding: 10px;
+                    width: 100%;
+                    text-align: center;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}

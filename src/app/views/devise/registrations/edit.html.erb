@@ -48,11 +48,15 @@
   </div>
 <% end %>
 
-<% if current_user.address_id == nil %>
+<h3>Postal Address</h3>
+<% if current_user.address == nil %>
 <%= link_to "Create an Postal Address", new_address_path %>
 <% else %>
 <%= current_user.address.houseno %>
-<%= link_to "Edit Postal Address", edit_address_path %>
+<%= current_user.address.street %><br>
+<%= current_user.address.state %>
+<%= current_user.address.postcode %><br>
+<%= link_to "Edit Postal Address", edit_address_path(current_user.address.id) %>
 <% end %>
 
 <h3>Cancel my account</h3>

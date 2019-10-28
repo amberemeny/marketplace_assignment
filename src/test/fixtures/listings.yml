@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  user: one
+  species: MyString
+  info: MyText
+  price: 9.99
+  quantity: 1
+
+two:
+  name: MyString
+  user: two
+  species: MyString
+  info: MyText
+  price: 9.99
+  quantity: 1

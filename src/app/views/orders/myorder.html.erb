@@ -1,0 +1,11 @@
+<h2>My Order</h2>
+
+<% if @order == nil %>
+    <h3>You have not created an order!</h3>
+<% elsif @order.listings == nil %>
+    <h3>You have no items in your order!</h3>
+<% else %>
+    <%= @order.listings.each do |data| %>
+        <%= data.name %>
+    <% end %>
+<% end %>
