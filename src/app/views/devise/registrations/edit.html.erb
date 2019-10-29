@@ -4,15 +4,15 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="user_info">
-    Username: <%= current_user.username %>
+    <strong>Username:</strong> <%= current_user.username %>
   </div>
 
   <div class="user_info">
-    First Name: <%= current_user.fname %>
+    <strong>First Name:</strong> <%= current_user.fname %>
   </div>
 
   <div class="user_info">
-    Last Name: <%= current_user.lname %>
+    <strong>Last Name:</strong> <%= current_user.lname %>
   </div>
 
   <div class="field">
@@ -26,16 +26,16 @@
 
   <div class="field">
     <%= f.label :password %> 
-    <p><i>(leave blank if you don't want to change it)</i></p>
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
+  <p><i>(leave blank if you don't want to change it)</i></p>
 
-  <div class="field">
+  <div class="field" id="password-field">
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
+  <div class="field" id="password-field">
     <%= f.label :current_password %> 
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
@@ -47,20 +47,26 @@
   </div>
 <% end %>
 
-<h3>Postal Address</h3>
-<% if current_user.address == nil %>
-<%= link_to "Create an Postal Address", new_address_path %>
-<% else %>
-<%= current_user.address.houseno %>
-<%= current_user.address.street %><br>
-<%= current_user.address.state %>
-<%= current_user.address.postcode %><br>
+<section id="postal-address">
+  <h3>Postal Address</h3>
+  <% if current_user.address == nil %>
+  <%= link_to "Create an Postal Address", new_address_path %>
+  <% else %>
+  <%= current_user.address.houseno %>
+  <%= current_user.address.street %>
+  <%= current_user.address.state %>
+  <%= current_user.address.postcode %>
+  <% end %>
+</section>
+
 <%= link_to "Edit Postal Address", edit_address_path(current_user.address.id) %>
-<% end %>
 
+<section id="user-cancel">
 <h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
+<p>
+  Unhappy? 
+</p>
+<%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+</section>
 <%= link_to "Back", :back %>
 </div>

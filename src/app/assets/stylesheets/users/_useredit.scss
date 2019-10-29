@@ -7,28 +7,82 @@
     box-shadow: 2px 2px 4px rgb(102, 102, 102);
     font-size: 1.2em;
     .user_info {
-        background: violet;
+        // background: violet;
+        padding: 3px;
     }
     .field {
-        background: yellow;
+        // background: yellow;
         display: flex;
         max-width: 90%;
         margin: auto;
         padding: 10px;
+        justify-content: space-between;
         label {
-            background: orange;
+            // background: orange;
+            font-weight: bold;
         }
         input {
-            background: orangered;
+            // background: orangered;
+        }
+    }
+    #password-field {
+        flex-direction: column;
+        padding-top: 0px;
+        align-items: center;
+        label {
+            padding: 3px;
+        }
+        input {
+            max-width: 60%;
         }
     }
     p {
-        margin: 0px;
-        background: yellowgreen;
+        margin: 0px 5px;
+        // background: yellowgreen;
     }
     .actions {
         text-align: center;
+        margin: 0px;
+        padding: 10px;
         button {
+        }
+    }
+    #postal-address {
+        // background: green;
+        padding: 5px;
+        h3 {
+            margin: 0px;
+        }
+        a {
+            // background: blue;
+        }
+    }
+    #user-cancel {
+        // background: violet;
+        margin-top: 10px;
+        h3 {
+            // background: orange;
+            margin: 0px;
+            padding: 5px;
+        }
+        p {
+            // background: yellow;
+            margin: 0px;
+            padding-left: 5px;
+            button {
+                margin: 10px;
+            }
+        }
+    }
+    a {
+        // background: brown;
+        
+    }
+    .button_to {
+        // background: blue;
+        text-align: center;
+        input {
+            margin: 10px;
         }
     }
 }

@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_listing, only: [:addtoorder]
   def index
     @orders = Order.all
   end
@@ -63,6 +63,14 @@ class OrdersController < ApplicationController
     @order = current_user.order
   end
 
+  # def addtoorder
+  #    if current_user.order == nil
+  #     current_user.order = Order.create()
+  #     current_user.order.listings << @listing
+  #    else
+  #     redirect_to myorder_path
+  # end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_order
@@ -73,4 +81,9 @@ class OrdersController < ApplicationController
     def order_params
       params.require(:order).permit(:user_id, :listings_id, :datetime, :completed)
     end
-end
+
+    # def set_listing
+    #   @listing = Listing.find(params[:id])
+    # end
+  end
+
