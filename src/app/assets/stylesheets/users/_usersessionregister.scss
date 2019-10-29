@@ -1,0 +1,42 @@
+#login-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Crimson Text', serif;
+    font-size: 2em;
+    // background: yellowgreen;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}
+.login-form {
+    // background: crimson;
+    max-width: 60%;
+    margin: 0px auto;
+    padding: 5px;
+    border: 10px solid olive;
+    box-shadow: 2px 2px 4px rgb(102, 102, 102);
+    font-size: 1.2em;
+    .field {
+        // background: yellow;
+        display: flex;
+        max-width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        padding: 10px;
+        label {
+            // background: orange;
+        }
+        #user_email, #user_password{
+            // background: orangered;
+        }
+    }
+    #remember {
+        justify-content: center;
+    }
+    .actions {
+        text-align: center;
+        button {
+        }
+    }
+}

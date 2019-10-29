@@ -1,0 +1,34 @@
+.edituser-form {
+    // background: crimson;
+    max-width: 60%;
+    margin: 0px auto;
+    padding: 5px;
+    border: 10px solid olive;
+    box-shadow: 2px 2px 4px rgb(102, 102, 102);
+    font-size: 1.2em;
+    .user_info {
+        background: violet;
+    }
+    .field {
+        background: yellow;
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        padding: 10px;
+        label {
+            background: orange;
+        }
+        input {
+            background: orangered;
+        }
+    }
+    p {
+        margin: 0px;
+        background: yellowgreen;
+    }
+    .actions {
+        text-align: center;
+        button {
+        }
+    }
+}
