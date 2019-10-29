@@ -1,0 +1,42 @@
+#table-title {
+    // background: crimson;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#listing-section {
+    display: flex;
+    flex-wrap: wrap;
+    .plant-listing {
+        // background: purple;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 10px;
+        min-height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        border: 10px solid olive;
+        box-shadow: 2px 2px 4px rgb(102, 102, 102);
+        .plant-listing-field {
+            // background: pink;
+            margin: 0px;
+        }
+        #name {
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+        #species {
+            font-style: italic;
+        }
+        #price-av {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    }
+}

@@ -11,6 +11,13 @@
 
   <body>
     <header>
+
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Crimson+Text:400,700&display=swap" rel="stylesheet">
+
+      <h1 id="site-heading">The Green Market</h1>
+
+      <hr>
+
       <ul id="navbar">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "All Listings", listings_path %></li>
@@ -23,10 +30,11 @@
           <li><%= link_to 'Sign In', new_user_session_path %></li>
         <% end %>
       </ul>
+      <hr>
     </header>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <!-- <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
     <%= yield %>
   </body>
 </html>

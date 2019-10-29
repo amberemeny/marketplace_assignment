@@ -64,6 +64,8 @@ ActiveRecord::Schema.define(version: 2019_10_28_023108) do
     t.string "username", null: false
     t.string "fname", null: false
     t.string "lname", null: false
+    t.bigint "address_id"
+    t.index ["address_id"], name: "index_users_on_address_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -71,4 +73,5 @@ ActiveRecord::Schema.define(version: 2019_10_28_023108) do
   add_foreign_key "addresses", "users"
   add_foreign_key "listings", "users"
   add_foreign_key "orders", "users"
+  add_foreign_key "users", "addresses"
 end
