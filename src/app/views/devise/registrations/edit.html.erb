@@ -50,7 +50,6 @@
 <section id="postal-address">
   <h3>Postal Address</h3>
   <% if current_user.address == nil %>
-  <%= link_to "Create an Postal Address", new_address_path %>
   <% else %>
   <%= current_user.address.houseno %>
   <%= current_user.address.street %>
@@ -59,7 +58,11 @@
   <% end %>
 </section>
 
+<% if current_user.address == nil %>
+<%= link_to "Create an Postal Address", new_address_path %>
+<% else %>
 <%= link_to "Edit Postal Address", edit_address_path(current_user.address.id) %>
+<% end %>
 
 <section id="user-cancel">
 <h3>Cancel my account</h3>

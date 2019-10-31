@@ -1,6 +1,7 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
-
+  before_action :authorise_user, only: [:edit, :update, :destroy]
+ 
   # GET /listings
   # GET /listings.json
   def index
@@ -14,7 +15,12 @@ class ListingsController < ApplicationController
 
   # GET /listings/new
   def new
-    @listing = Listing.new
+    if user_signed_in?
+      @listing = Listing.new
+    else 
+      flash[:notice] = "You are not signed in."
+      redirect_to user_session_path
+    end
   end
 
   # GET /listings/1/edit
@@ -76,4 +82,11 @@ class ListingsController < ApplicationController
     def listing_params
       params.require(:listing).permit(:name, :user_id, :species, :info, :price)
     end
+
+    def authorise_user
+      if current_user != @listing.user
+        flash[:alert] = "You are not authorised to carry out this action."
+        redirect_to listings_path
+    end
+  end
 end

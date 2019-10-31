@@ -1,6 +1,8 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   before_action :set_listing, only: [:addtoorder]
+  before_action :authenticate_user!
+  before_action :admin_only, only: [:index]
   def index
     @orders = Order.all
   end
@@ -85,5 +87,12 @@ class OrdersController < ApplicationController
     # def set_listing
     #   @listing = Listing.find(params[:id])
     # end
+    def admin_only
+      if current_user.has_role? :admin
+      else
+        flash[:alert] = "You are not authorised to carry out this action."
+        redirect_to root_path
+      end
+    end
   end
 
