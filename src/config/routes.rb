@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :orders
   get "myorder", to: 'orders#myorder'
-  get "addtoorder", to: 'orders#addtoorder'
+  get "addtoorder/:id", to: 'orders#addtoorder', as: "addtoorder"
   resources :listings
   get "mylistings", to: 'listings#mylistings'
   resources :addresses

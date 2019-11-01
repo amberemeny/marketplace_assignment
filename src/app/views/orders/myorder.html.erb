@@ -5,7 +5,7 @@
 <% elsif @order.listings == nil %>
     <h3>You have no items in your order!</h3>
 <% else %>
-    <%= @order.listings.each do |data| %>
+    <% @order.listings.each do |data| %>
         <%= data.name %>
     <% end %>
 <% end %>

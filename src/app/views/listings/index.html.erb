@@ -5,6 +5,11 @@
   <% @listings.each do |listing| %>
     <article class="plant-listing">
     <p class="plant-listing-field" id="name"><%= link_to listing.name, listing %></p>
+    <p class="plant-listing-img">
+      <% if listing.image != nil %>
+        <%= image_tag listing.image, width: 200 %>
+      <% end %>
+    </p>
     <p class="plant-listing-field" id="species"><%= listing.species %></p>
     <p class="plant-listing-field" id="price-av">$<%= listing.price %></p>
     </article>

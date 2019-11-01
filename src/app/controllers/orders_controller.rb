@@ -1,6 +1,5 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-  before_action :set_listing, only: [:addtoorder]
   before_action :authenticate_user!
   before_action :admin_only, only: [:index]
   def index
@@ -63,6 +62,21 @@ class OrdersController < ApplicationController
 
   def myorder 
     @order = current_user.order
+    @listing = current_user.order.listings
+  end
+
+  def addtoorder
+    if current_user.order == nil
+      current_user.order = Order.create()
+    end
+    @listing = Listing.find(params[:id])
+
+    if !current_user.order.listings.include?(@listing)
+      current_user.order.listings << @listing
+    else
+      flash[:notice] = "Already added item to cart."
+    end
+    redirect_to myorder_path
   end
 
   # def addtoorder
