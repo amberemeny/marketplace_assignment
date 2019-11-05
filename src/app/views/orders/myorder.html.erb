@@ -2,10 +2,26 @@
 
 <% if @order == nil %>
     <h3>You have not created an order!</h3>
-<% elsif @order.listings == nil %>
+<% elsif @order.listings == [] %>
     <h3>You have no items in your order!</h3>
 <% else %>
     <% @order.listings.each do |data| %>
-        <%= data.name %>
+        <p>
+        <%= link_to data.name, data %>
+        <%= number_to_currency data.price %>
+        <%= link_to "Remove", removeitem_path(data.id), method: :delete %>
+        </p>
     <% end %>
+    
+    <button id='button'>Checkout Now</button>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        var stripe = Stripe('pk_test_KhHJGGND7IDoknZYvZTByBiX00KVRR8d2e');
+        document.getElementById('button').addEventListener('click', () => {
+            stripe.redirectToCheckout({
+                sessionId: '<%= @session.id %>'
+                }).then(result => alert(result));
+        })
+    </script>
 <% end %>

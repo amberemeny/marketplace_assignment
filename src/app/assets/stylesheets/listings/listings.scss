@@ -1,3 +1,54 @@
 // Place all the styles related to the Listings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+    #mylistings {
+        // background: crimson;
+        margin: 15px auto;
+        width: 60%;
+        border-collapse: collapse;
+        border: 1px solid black;
+        outline: 10px solid olive;
+        font-size: 1.1em;
+        thead {
+            // background: orangered;
+            border: 1px solid black;
+            tr {
+                // background: orange;
+                border: 1px solid black;
+                th {
+                    // background: yellow;
+                    border: 1px solid black;
+                    padding: 5px;
+                    a {
+                        // background: yellowgreen;
+                        text-transform: uppercase;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        tbody {
+            // background: green;
+            border: 1px solid black;
+            text-align: center;
+            tr {
+                
+                td {
+                    // background: blue;
+                    vertical-align: middle;
+                    border: 1px solid black;
+                    }
+                #image {
+                    background: black;
+                    width: 200px;
+                    img {
+                        // background: blueviolet;
+                    }
+                    a {
+                        // background: orchid;
+                    }
+                }
+            }
+        }
+    }

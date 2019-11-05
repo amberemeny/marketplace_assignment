@@ -11,7 +11,7 @@
       <% end %>
     </p>
     <p class="plant-listing-field" id="species"><%= listing.species %></p>
-    <p class="plant-listing-field" id="price-av">$<%= listing.price %></p>
+    <p class="plant-listing-field" id="price-av"><%= number_to_currency listing.price %></p>
     </article>
     <% end %>
 </section>

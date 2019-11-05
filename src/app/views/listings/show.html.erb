@@ -22,9 +22,11 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @listing.price %>
+  <%= number_to_currency @listing.price %>
 </p>
 
-
-<%= link_to 'Add to Order', addtoorder_path(@listing) %> |
-
+<% if current_user.order && current_user.order.listings.include?(@listing) %>
+  <p>You've already added this item to your order!</p>
+<% else %>
+  <%= link_to 'Add to Order', addtoorder_path(@listing) %>
+<% end %>

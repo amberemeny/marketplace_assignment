@@ -1,3 +1,5 @@
+require 'stripe'
+
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
@@ -62,7 +64,27 @@ class OrdersController < ApplicationController
 
   def myorder 
     @order = current_user.order
-    @listing = current_user.order.listings
+    @listings = current_user.order.listings
+    @listingprice = 0
+    
+    lineitems = []
+    current_user.order.listings.each do |line|
+      lineitems << {
+        name: line.name,
+        description: line.info,
+        amount: (line.price * 100).to_i,
+        currency: 'aud',
+        quantity: 1,
+      }
+    end
+
+    Stripe.api_key = 'sk_test_phmwp2idklIfAPFVwhufh4Zr00wSyqegNR'
+    @session = Stripe::Checkout::Session.create(
+      payment_method_types: ['card'],
+      line_items: lineitems,
+      success_url: 'http://localhost:3000/',
+      cancel_url: 'http://localhost:3000/'
+    )
   end
 
   def addtoorder
@@ -75,6 +97,16 @@ class OrdersController < ApplicationController
       current_user.order.listings << @listing
     else
       flash[:notice] = "Already added item to cart."
+    end
+    redirect_to myorder_path
+  end
+
+  def removeitem
+    item = Listing.find(params[:id])
+    if current_user.order.listings.find(item.id)
+      current_user.order.listings_orders.where(listing_id: item.id, order_id: current_user.order.id).destroy_all
+    else 
+      flash[:notice] = "This item is not in your cart."
     end
     redirect_to myorder_path
   end
