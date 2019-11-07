@@ -94,19 +94,15 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
 #### Controllers
   The application uses 4 controllers in addition to Devise generated controllers to process logic and implement the views. I have included links to each controller file where I have heavily commented each method to explain its function.
   
-- Addresses Controller
-	 The Addresses controller deals with the creation and editing of a User's Address entry. 
+- **Addresses Controller** - The Addresses controller deals with the creation and editing of a User's Address entry. 
  An entry can not be deleted by a user directly but it can be destroyed from the database or console.
 [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/addresses_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/addresses_controller.rb)
- - Listings Controller
- The Listings controller handles the creation, modification, deletion and indexing of a User's Listing entry. 
+ - **Listings Controller** - The Listings controller handles the creation, modification, deletion and indexing of a User's Listing entry. 
  [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/listings_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/listings_controller.rb)
- **Orders Controller**
- The Order controller deals with the creation, adding of a Listing to an Order, and checkout processing. 
+ - **Orders Controller** - The Order controller deals with the creation, adding of a Listing to an Order, and checkout processing. 
    An index of all orders is only accessible by a User with the admin role and a User can only view and act on their own orders. This is made possible using Rolify authorisation.
 [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/orders_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/orders_controller.rb)   
- **Pages Controller**
- The pages controller is a very simple file without a related model and with only one method. It's index method directs to the index view that essentially acts as a home page for the application.
+ - **Pages Controller** - The pages controller is a very simple file without a related model and with only one method. It's index method directs to the index view that essentially acts as a home page for the application.
  [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb)
 ### Third-Party Services
 ### Database
@@ -219,5 +215,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTUxNjYxNSwxMDIzMzA2NTQzXX0=
+eyJoaXN0b3J5IjpbODQwNDMwODc3LDEwMjMzMDY1NDNdfQ==
 -->
