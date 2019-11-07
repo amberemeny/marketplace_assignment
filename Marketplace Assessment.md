@@ -107,7 +107,11 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
 ### Third-Party Services
 The following third-party services were utilized in the development of this application:
  - Heroku - used to host the application for testing and deployment.
-[https://www.heroku.com/](https://www.heroku.com/) 
+[https://www.heroku.com/](https://www.heroku.com/)
+- Github - used for version control and project managment.
+[https://github.com/](https://github.com/)
+
+The following Ruby on Rails gems were also implemented  
 ### Database
 #### Schema
 ```javascript
@@ -218,5 +222,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg3NzY5MDEsMTAyMzMwNjU0M119
+eyJoaXN0b3J5IjpbMzQ3OTI1NTI4LDEwMjMzMDY1NDNdfQ==
 -->
