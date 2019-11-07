@@ -111,7 +111,11 @@ The following third-party services were utilized in the development of this appl
 - Github - used for version control and project managment.
 [https://github.com/](https://github.com/)
 
-The following Ruby on Rails gems were also implemented  
+The following Ruby on Rails gems were also implemented in the application:
+- Devise - used for creating the user model and authentication.
+- Rolify - 
+- Cloudinary
+- Stripe 
 ### Database
 #### Schema
 ```javascript
@@ -222,5 +226,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3OTI1NTI4LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbNzgxMDQwNDA5LDEwMjMzMDY1NDNdfQ==
 -->
