@@ -118,7 +118,10 @@ The following Ruby on Rails gems were also implemented in the application:
 [https://github.com/RolifyCommunity/rolify](https://github.com/RolifyCommunity/rolify)
 - **Cloudinary** - used for hosting and manipulating user uploaded images.
 [https://github.com/cloudinary/cloudinary_gem](https://github.com/cloudinary/cloudinary_gem)
+[https://cloudinary.com/](https://cloudinary.com/)
 - **Stripe** - used for secure checkout of user orders and to handle payment.
+[https://github.com/stripe/stripe-ruby](https://github.com/stripe/stripe-ruby)
+[https://stripe.com/](https://stripe.com/)
 ### Database
 #### Schema
 ```javascript
@@ -229,5 +232,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjI2NTE0NzIsMTAyMzMwNjU0M119
+eyJoaXN0b3J5IjpbLTU1NTE4ODk2NSwxMDIzMzA2NTQzXX0=
 -->
