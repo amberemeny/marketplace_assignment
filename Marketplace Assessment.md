@@ -92,7 +92,7 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
   The Address model is quite simple and each User can add a single Address to their account through the edit profile view. It acts as a seperate entry to store a User's postal address.
   The Role model created through Rolify is used to assign admin or user roles to each User. The assigned role is then used to implement authorisation throughout the application. For example, only a User with the admin role has the power to view an index of all the orders created.
 #### Controllers
-  The application uses 4 controllers in addition to Devise generated controllers to process logic and implement the views.
+  The application uses 4 controllers in addition to Devise generated controllers to process logic and implement the views. I have included links to each controller file where I have heavily commented each method to explain its function.
   
  **Addresses Controller**
  The Addresses controller deals with the creation and editing of a User's Address entry. 
@@ -218,5 +218,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTU3Mjc1MSwxMDIzMzA2NTQzXX0=
+eyJoaXN0b3J5IjpbLTE1MDk5MjAwMzUsMTAyMzMwNjU0M119
 -->
