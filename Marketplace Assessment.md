@@ -113,9 +113,9 @@ The following third-party services were utilized in the development of this appl
 
 The following Ruby on Rails gems were also implemented in the application:
 - Devise - used for creating the user model and authentication.
-- Rolify - 
-- Cloudinary
-- Stripe 
+- Rolify - used for assigning users various roles and authorizing the actions they can carry out in the application.
+- Cloudinary - used for hosting and manipulating user uploaded images.
+- Stripe - used for secure checkout of user orders and to handle payment.
 ### Database
 #### Schema
 ```javascript
@@ -226,5 +226,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgxMDQwNDA5LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbLTgyMTgzNDk1OSwxMDIzMzA2NTQzXX0=
 -->
