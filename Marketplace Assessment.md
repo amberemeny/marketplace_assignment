@@ -97,7 +97,7 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
  **Addresses Controller**
  The Addresses controller deals with the creation and editing of a User's Address entry. 
  An entry can not be deleted by a user directly but it can be destroyed from the database or console.
- 
+([https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/addresses_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/addresses_controller.rb)
  **Listings Controller**
  The Listings controller handles the creation, modification, deletion and indexing of a User's Listing entry. 
  
@@ -218,5 +218,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk5MjAwMzUsMTAyMzMwNjU0M119
+eyJoaXN0b3J5IjpbLTE2OTE5Nzc5NDQsMTAyMzMwNjU0M119
 -->
