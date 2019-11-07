@@ -105,6 +105,8 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
  - **Pages Controller** - The pages controller is a very simple file without a related model and with only one method. It's index method directs to the index view that essentially acts as a home page for the application.
  [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb)
 ### Third-Party Services
+The following third-party services were utilized in the development of this application:
+
 ### Database
 #### Schema
 ```javascript
@@ -215,5 +217,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQwNDMwODc3LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbLTIzMjc1MDA4LDEwMjMzMDY1NDNdfQ==
 -->
