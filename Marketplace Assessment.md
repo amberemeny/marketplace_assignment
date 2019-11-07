@@ -106,7 +106,8 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
  [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb)
 ### Third-Party Services
 The following third-party services were utilized in the development of this application:
-
+ - Heroku - used to host the application for testing and deployment.
+[https://www.heroku.com/](https://www.heroku.com/) 
 ### Database
 #### Schema
 ```javascript
@@ -217,5 +218,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjc1MDA4LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbLTIwODg3NzY5MDEsMTAyMzMwNjU0M119
 -->
