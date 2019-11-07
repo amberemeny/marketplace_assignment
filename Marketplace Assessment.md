@@ -106,16 +106,19 @@ The marketplace application utilises 4 primary models: User, Address, Listing, a
  [https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb](https://github.com/amberemeny/marketplace_assignment/blob/master/src/app/controllers/pages_controller.rb)
 ### Third-Party Services
 The following third-party services were utilized in the development of this application:
- - Heroku - used to host the application for testing and deployment.
+ - **Heroku** - used to host the application for testing and deployment.
 [https://www.heroku.com/](https://www.heroku.com/)
-- Github - used for version control and project managment.
+- **Github** - used for version control and project managment.
 [https://github.com/](https://github.com/)
 
 The following Ruby on Rails gems were also implemented in the application:
-- Devise - used for creating the user model and authentication.
-- Rolify - used for assigning users various roles and authorizing the actions they can carry out in the application.
-- Cloudinary - used for hosting and manipulating user uploaded images.
-- Stripe - used for secure checkout of user orders and to handle payment.
+- **Devise** - used for creating the user model and authentication.
+[https://github.com/plataformatec/devise](https://github.com/plataformatec/devise)
+- **Rolify** - used for assigning users various roles and authorizing the actions they can carry out in the application.
+[https://github.com/RolifyCommunity/rolify](https://github.com/RolifyCommunity/rolify)
+- **Cloudinary** - used for hosting and manipulating user uploaded images.
+[https://github.com/cloudinary/cloudinary_gem](https://github.com/cloudinary/cloudinary_gem)
+- **Stripe** - used for secure checkout of user orders and to handle payment.
 ### Database
 #### Schema
 ```javascript
@@ -226,5 +229,5 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTgzNDk1OSwxMDIzMzA2NTQzXX0=
+eyJoaXN0b3J5IjpbLTE1NjI2NTE0NzIsMTAyMzMwNjU0M119
 -->
