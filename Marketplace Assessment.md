@@ -1,34 +1,6 @@
 # Marketplace Assessment
-## Setup
-### Application Initiation
-
-~~rails new marketplace_assessment -dpostgresql~~
-~~database.yml update~~
-~~bundle add devise~~
-~~rails g devise:install~~
-~~follow devise instructions~~
-~~rails g devise User~~
-~~rails g migrate AddFieldstoUser username fname lname~~
-~~edit devise views, and controller strong parameters~~
-~~rails g model Address user:references unitno street suburb state postcode:integer
-rails g controller Addresses new create update destroy
-rails g migrate AddAddresstoUser address:references
-rails g model Listing name price:decimal user:references species information
-rails g controller Listings index new create show edit update destroy
-rails g Model Order user:references listings:references datetime:datetime completed:boolean
-rails g migration AddOrdertoListing orders:references
-rails g migration orders_listings~~
-bundle add rolify
-bundle add cancancan
-rails generate cancan:ability
-rails generate rolify Role User
-rails generate rolify Role Admin
-- follow cancancan and rolify tutorial
-- rails active_storage:install
-- follow cloudinary tutorial
-
-### Views
-
+Github repo: [https://github.com/amberemeny/marketplace_assignment](https://github.com/amberemeny/marketplace_assignment)
+Heroku deployment: 
 ## Identifying the Problem
 
 I have chosen to develop a marketplace called The Green Market as my assessment. This web-based application aims to solve a problem I have identified as a horticulture hobbyist and rare plant collector. 
@@ -232,5 +204,6 @@ end
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NTE4ODk2NSwxMDIzMzA2NTQzXX0=
+eyJoaXN0b3J5IjpbMTI0MzU1ODE0NywtNTU1MTg4OTY1LDEwMj
+MzMDY1NDNdfQ==
 -->
