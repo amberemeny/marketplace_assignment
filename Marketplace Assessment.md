@@ -21,7 +21,14 @@ Implementing such a website will allow collectors across all experience levels t
 ### Target Audience
 ### Tech Stack
 I used the following programs to develop my application:
- - Visual Studio
+ - Visual Studio Code
+ - Stackedit.io
+ - Figma
+ I personally coded using the following languages:
+ - Ruby
+ - HTML
+ - CSS
+ - Jav
 ## Development
 ### User Stories
 The user stories I have developed revolve around three key consumer roles: admin, buyer and seller. Admin refers to someone maintaining and monitoring the application usage. Seller refers to a consumer that uses the application to sell their plants and buyer refers to someone who purchases the plants listed by the seller.
@@ -208,6 +215,6 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDg1MzMsMTI0MzU1ODE0NywtNTU1MT
-g4OTY1LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbMTQyNDIyOTk3NywxMjQzNTU4MTQ3LC01NT
+UxODg5NjUsMTAyMzMwNjU0M119
 -->
