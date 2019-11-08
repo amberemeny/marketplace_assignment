@@ -1,9 +1,17 @@
+# This view allows the currently logged in user to view what items are in their order and initiate checkout through stripe.
+
+# Page heading.
 <h2>My Order</h2>
 
+# If the user does not have an order, show the following text.
 <% if @order == nil %>
     <h3>You have not created an order!</h3>
+
+# If the user has created an order, but doesn't contain any items, display the following text.
 <% elsif @order.listings == [] %>
     <h3>You have no items in your order!</h3>
+
+# Otherwise, for each listing in the order, link to the listing through its name, show the price, and a link to remove the item from the order.
 <% else %>
     <% @order.listings.each do |data| %>
         <p>
@@ -13,6 +21,7 @@
         </p>
     <% end %>
     
+    # This code displays a checkout link and initiates the stripe process.
     <button id='button'>Checkout Now</button>
 
     <script src="https://js.stripe.com/v3/"></script>

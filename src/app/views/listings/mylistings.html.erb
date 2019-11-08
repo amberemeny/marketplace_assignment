@@ -1,19 +1,24 @@
-<p id="notice"><%= notice %></p>
-
+# Page heading.
 <h1 id="table-title">My Listings</h1>
 
+# A table containing a list of the users listings.
 <table id= "mylistings">
   <thead>
     <tr>
+      # Column headings.
       <th id= "image">Image</th>
       <th>Name</th>
       <th>Species</th>
       <th>Price</th>
+
+      # The link to create a new listing.
       <th colspan="3"><%= link_to 'New Listing', new_listing_path %></th>
     </tr>
   </thead>
 
   <tbody>
+    
+    # For each listing, in a single row, display the associated image, name, species and price. Then, the links to the detailed listing, the edit form and to destroy the listing directly.
     <% @listings.each do |listing| %>
       <tr>
         <td id="image">
