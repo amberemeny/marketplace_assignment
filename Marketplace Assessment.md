@@ -15,20 +15,23 @@ By identifying the problems facing the plant hobbyist community, I was able to c
 Implementing such a website will allow collectors across all experience levels to come to a single place to purchase and sell their plants. Having a single website for such a purpose will help sellers view other similar plants for sale to label and price their wares appropriately, hopefully combating market inflation.
 ## Application Information
 ### Purpose
+The Green Market aims to be an accessible platform for consumers from various backgrounds to use to buy or sell houseplants. 
 ### Functionality and Features
 ### Sitemap
 ### Screenshots
 ### Target Audience
+This application aims to target those who collect plants as a hobby or source of income.
 ### Tech Stack
 I used the following programs to develop my application:
  - Visual Studio Code
  - Stackedit.io
  - Figma
+ - 
  I personally coded using the following languages:
  - Ruby
  - HTML
  - CSS
- - Jav
+ - Javascript
 ## Development
 ### User Stories
 The user stories I have developed revolve around three key consumer roles: admin, buyer and seller. Admin refers to someone maintaining and monitoring the application usage. Seller refers to a consumer that uses the application to sell their plants and buyer refers to someone who purchases the plants listed by the seller.
@@ -215,6 +218,6 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDIyOTk3NywxMjQzNTU4MTQ3LC01NT
-UxODg5NjUsMTAyMzMwNjU0M119
+eyJoaXN0b3J5IjpbMjgwMjg3MDMyLDEyNDM1NTgxNDcsLTU1NT
+E4ODk2NSwxMDIzMzA2NTQzXX0=
 -->
