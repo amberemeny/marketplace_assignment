@@ -113,7 +113,7 @@ A listing belongs_to a user & a user has_many listings: a one to many relationsh
 A listing has_many orders, through listings_orders & an order has many listings, through listings_orders: a many-to-many relationship where a listing can be associated with many orders when it is added to a user's order, and that user's order can contain many listings.
 Listing has_one_attached image: a one to one relationship using cloudinary to upload and relate a single image to a listing.
 An order belongs_to a user & a user has_one order: a one-to-one relationship where a user can have an order and that order can only have one user associated with it.
-
+- I would like to note for the above relationship that I would plan to change this to a one to many so that a user can have many orders and maybe even view a history of their completed orders.
 
 #### Schema
 ```javascript
@@ -226,6 +226,6 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDc0MzY3NzUsMTI0MzU1ODE0NywtNT
-U1MTg4OTY1LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbLTM2NTk5NzU5OSwxMjQzNTU4MTQ3LC01NT
+UxODg5NjUsMTAyMzMwNjU0M119
 -->
