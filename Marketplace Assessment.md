@@ -108,8 +108,9 @@ The following Ruby on Rails gems were also implemented in the application:
 [https://stripe.com/](https://stripe.com/)
 ### Database
 #### Database Relations
-An address belongs_to a user & a user belongs_to an address: A one-to-one relationship where an address can belong to only one user and a user may only have one postal address. 
-A listing belongs_to a user:
+An address belongs_to a user & a user has an address: A one-to-one relationship where an address can belong to only one user and a user may only have one postal address. 
+A listing belongs_to a user & a user has_many listings: a one to many relationship where a single user can create as many listings as they like but a listing can only be created by a single user.
+A listing has_many orders, through listings_orders & a 
 
 #### Schema
 ```javascript
@@ -222,6 +223,6 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyMDUxMDkxLDEyNDM1NTgxNDcsLTU1NT
+eyJoaXN0b3J5IjpbMjU2MTExMTI2LDEyNDM1NTgxNDcsLTU1NT
 E4ODk2NSwxMDIzMzA2NTQzXX0=
 -->
