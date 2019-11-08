@@ -107,6 +107,8 @@ The following Ruby on Rails gems were also implemented in the application:
 [https://github.com/stripe/stripe-ruby](https://github.com/stripe/stripe-ruby)
 [https://stripe.com/](https://stripe.com/)
 ### Database
+#### Database Relations
+An address belongs_to a user: A user can only have a single 
 #### Schema
 ```javascript
 create_table "active_storage_attachments", force:  :cascade  do |t|
@@ -218,6 +220,6 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMjg3MDMyLDEyNDM1NTgxNDcsLTU1NT
-E4ODk2NSwxMDIzMzA2NTQzXX0=
+eyJoaXN0b3J5IjpbLTE1NTQyMjA2NTgsMTI0MzU1ODE0NywtNT
+U1MTg4OTY1LDEwMjMzMDY1NDNdfQ==
 -->
