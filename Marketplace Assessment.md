@@ -20,6 +20,8 @@ Implementing such a website will allow collectors across all experience levels t
 ### Screenshots
 ### Target Audience
 ### Tech Stack
+I used the following programs to develop my application:
+ - Visual Studio
 ## Development
 ### User Stories
 The user stories I have developed revolve around three key consumer roles: admin, buyer and seller. Admin refers to someone maintaining and monitoring the application usage. Seller refers to a consumer that uses the application to sell their plants and buyer refers to someone who purchases the plants listed by the seller.
@@ -198,12 +200,14 @@ add_foreign_key "users", "addresses"
 end
 ```
 ### Task Tracking
+I used Github's integrated project tracking to help organize my tasks and track issues. 
+[https://github.com/amberemeny/marketplace_assignment/projects/1](https://github.com/amberemeny/marketplace_assignment/projects/1)
 
 
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MzU1ODE0NywtNTU1MTg4OTY1LDEwMj
-MzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbLTY4NDg1MzMsMTI0MzU1ODE0NywtNTU1MT
+g4OTY1LDEwMjMzMDY1NDNdfQ==
 -->
