@@ -111,7 +111,9 @@ The following Ruby on Rails gems were also implemented in the application:
 An address belongs_to a user & a user has an address: A one-to-one relationship where an address can belong to only one user and a user may only have one postal address. 
 A listing belongs_to a user & a user has_many listings: a one to many relationship where a single user can create as many listings as they like but a listing can only be created by a single user.
 A listing has_many orders, through listings_orders & an order has many listings, through listings_orders: a many-to-many relationship where a listing can be associated with many orders when it is added to a user's order, and that user's order can contain many listings.
-Listing has_one_attached image: a on
+Listing has_one_attached image: a one to one relationship using cloudinary to upload and relate a single image to a listing.
+An order belongs_to a user & a user has_one order: a one-to-one relationship where a user can have an order and that order can only have one user associated with it.
+
 
 #### Schema
 ```javascript
@@ -224,6 +226,6 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzA5ODQwMywxMjQzNTU4MTQ3LC01NT
-UxODg5NjUsMTAyMzMwNjU0M119
+eyJoaXN0b3J5IjpbLTExNDc0MzY3NzUsMTI0MzU1ODE0NywtNT
+U1MTg4OTY1LDEwMjMzMDY1NDNdfQ==
 -->
