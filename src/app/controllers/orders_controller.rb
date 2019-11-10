@@ -42,32 +42,38 @@ class OrdersController < ApplicationController
     # creates a variable that contains the currently logged in user's order.
     @order = current_user.order
     # creates a variable that contains the listings inside the currently logged in users order.
-    @listings = current_user.order.listings
     
+    if @current_user.order != nil
+      @listings = current_user.order.listings
+        if @listings != []
     # creates a variable containing an empty array.
-    lineitems = []
-    # for each listing in the currently logged in user's order, create a hash using the listings details.
-    current_user.order.listings.each do |line|
-      lineitems << {
-        name: line.name,
-        description: line.info,
-        amount: (line.price * 100).to_i,
-        currency: 'aud',
-        quantity: 1,
-      }
+          lineitems = []
+        # for each listing in the currently logged in user's order, create a hash using the listings details.
+        current_user.order.listings.each do |line|
+          lineitems << {
+            name: line.name,
+            description: line.info,
+            amount: (line.price * 100).to_i,
+            currency: 'aud',
+            quantity: 1,
+          }
+        
+          # stripe testing details
+          Stripe.api_key = 'sk_test_phmwp2idklIfAPFVwhufh4Zr00wSyqegNR'
+          # creates a variable for the checkout session created through stripe.
+          @session = Stripe::Checkout::Session.create(
+            payment_method_types: ['card'],
+            line_items: lineitems,
+            # url directed to upon success.
+            success_url: 'http://localhost:3000/',
+            # url directed to upon failure.
+            cancel_url: 'http://localhost:3000/'
+          )
+      end
     end
+  end
 
-    # stripe testing details
-    Stripe.api_key = 'sk_test_phmwp2idklIfAPFVwhufh4Zr00wSyqegNR'
-    # creates a variable for the checkout session created through stripe.
-    @session = Stripe::Checkout::Session.create(
-      payment_method_types: ['card'],
-      line_items: lineitems,
-      # url directed to upon success.
-      success_url: 'http://localhost:3000/',
-      # url directed to upon failure.
-      cancel_url: 'http://localhost:3000/'
-    )
+    
   end
 
   # custom order - uses logic to create a new order and add listings to an order.

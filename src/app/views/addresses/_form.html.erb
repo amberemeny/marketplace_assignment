@@ -1,13 +1,13 @@
-# This form is used throuought address views.
+<%# # This form is used throuought address views. %>
 <div class="login-form">
-  # Using the address model.  
+  <%# # Using the address model.   %>
   <%= form_with(model: address, local: true) do |form| %>
-    # if there are any errors, display them at the top of the form.
+    <%# # if there are any errors, display them at the top of the form. %>
     <% if address.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(address.errors.count, "error") %> prohibited this address from being saved:</h2>
 
-        # displays full messages for each error found.
+        <%# # displays full messages for each error found. %>
         <ul>
           <% address.errors.full_messages.each do |message| %>
             <li><%= message %></li>
@@ -16,37 +16,37 @@
       </div>
     <% end %>
 
-    # House Number field.
+    <%# # House Number field. %>
     <div class="field">
       <%= form.label :houseno %>
       <%= form.text_field :houseno %>
     </div>
 
-    # Street Name field.
+    <%# # Street Name field. %>
     <div class="field">
       <%= form.label :street %>
       <%= form.text_field :street %>
     </div>
 
-    # Suburb Name field.
+    <%# # Suburb Name field. %>
     <div class="field">
       <%= form.label :suburb %>
       <%= form.text_field :suburb %>
     </div>
 
-    # State Name field.
+    <%# # State Name field. %>
     <div class="field">
       <%= form.label :state %>
       <%= form.text_field :state %>
     </div>
 
-    # Postcode Number field.
+    <%# # Postcode Number field. %>
     <div class="field">
       <%= form.label :postcode %>
       <%= form.number_field :postcode %>
     </div>
 
-    # Submit Button
+    <%# # Submit Button %>
     <div class="actions">
       <%= form.submit %>
     </div>

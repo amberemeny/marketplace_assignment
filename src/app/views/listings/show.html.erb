@@ -1,6 +1,6 @@
-# This page displays more details about each listing.
+<%# # This page displays more details about each listing. %>
 
-# For the listing defined in the controller, show the name, username of the seller, species, information, and price.
+<%# # For the listing defined in the controller, show the name, username of the seller, species, information, and price. %>
 <p>
   <strong>Name:</strong>
   <%= @listing.name %>
@@ -26,7 +26,7 @@
   <%= number_to_currency @listing.price %>
 </p>
 
-# If the currently logged in user already has this item associated with their order, display text that informs them. Otherwise, display a link to add the listing to their order through the addtoorder method in the order controller.
+<%# # If the currently logged in user already has this item associated with their order, display text that informs them. Otherwise, display a link to add the listing to their order through the addtoorder method in the order controller. %>
 <% if current_user.order && current_user.order.listings.include?(@listing) %>
   <p>You've already added this item to your order!</p>
 <% else %>

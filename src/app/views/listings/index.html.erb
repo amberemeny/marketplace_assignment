@@ -1,8 +1,8 @@
-# Page heading.
+<%# # Page heading. %>
 <h2 id="table-title">Plants For Sale</h2>
 <section id="listing-section">
   
-  # For each listing object, set an article that contains a link to the listing, it's associated image, species name, and price.
+  <%# # For each listing object, set an article that contains a link to the listing, it's associated image, species name, and price. %>
   <% @listings.each do |listing| %>
     <article class="plant-listing">
     <p class="plant-listing-field" id="name"><%= link_to listing.name, listing %></p>

@@ -1,9 +1,9 @@
-# This form will be displayed throuought the listings views when the form is called.
+<%# # This form will be displayed throuought the listings views when the form is called. %>
 
-# Form using the listing model.
+<%# # Form using the listing model. %>
 <%= form_with(model: listing, local: true) do |form| %>
 
-# If there are any errors, display the message.
+<%# # If there are any errors, display the message. %>
   <% if listing.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
@@ -16,25 +16,25 @@
     </div>
   <% end %>
 
-  # Listing name field.
+  <%# # Listing name field. %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  # Image upload field.
+  <%# # Image upload field. %>
   <div class="field">
     <%= form.label :image %>
     <%= form.file_field :image %>
   </div>
 
-  # Species name field.
+  <%# # Species name field. %>
   <div class="field">
     <%= form.label :species %>
     <%= form.text_field :species %>
   </div>
 
-  # Listing information field.
+  <%# # Listing information field. %>
   <div class="field">
     <%= form.label :info %>
     <%= form.text_area :info %>
