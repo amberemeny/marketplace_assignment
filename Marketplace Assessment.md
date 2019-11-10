@@ -1,6 +1,7 @@
 # Marketplace Assessment
 Github repo: [https://github.com/amberemeny/marketplace_assignment](https://github.com/amberemeny/marketplace_assignment)
 Heroku deployment: 
+[https://the-green-market.herokuapp.com/](https://the-green-market.herokuapp.com/)
 ## Identifying the Problem
 
 I have chosen to develop a marketplace called The Green Market as my assessment. This web-based application aims to solve a problem I have identified as a horticulture hobbyist and rare plant collector. 
@@ -18,7 +19,21 @@ Implementing such a website will allow collectors across all experience levels t
 The Green Market aims to be an accessible platform for consumers from various backgrounds to use to buy or sell houseplants. 
 ### Functionality and Features
 ### Sitemap
+### ScreenshotsThe Green Market functions as a two-way marketplace that allows users to:
+- create an account to store shipping information
+- add listings to sell your own plants
+- browse all listings added by yourself and other sellers
+- purchase the plants you're interested in from other sellers by adding them to your order and processing payment.
+### Sitemap
+![Sitemap](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/Sitemap.jpg?raw=true)
 ### Screenshots
+![Homepage](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/pages-index.png?raw=true)
+![Signup](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/signup.png?raw=true)
+![Sign In](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/log-in.png?raw=true)
+![Edit Profile](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/users-edit.png?raw=true)
+![All Listings](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/listings-index.png?raw=true)
+![My Listings](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/listings-mylistings.png?raw=true)
+![My Order](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/orders-myorder.png?raw=true)
 ### Target Audience
 This application aims to target those who collect plants as a hobby or source of income.
 ### Tech Stack
@@ -67,6 +82,7 @@ The user stories I have developed revolve around three key consumer roles: admin
 - **to be implemented** - contact the buyer or seller directly to communicate issues or notify them of inappropriate conduct. 
 
 ### Wireframes
+![Wireframes](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/Wireframes.jpg?raw=true)
 ### Entity Relation Diagram
 ![Alt](https://github.com/amberemeny/marketplace_assignment/blob/master/docs/ERD.png?raw=true)
 ### High Level Components
@@ -226,6 +242,7 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3OTM3MTUyLC0zNjU5OTc1OTksMTI0Mz
-U1ODE0NywtNTU1MTg4OTY1LDEwMjMzMDY1NDNdfQ==
+eyJoaXN0b3J5IjpbMTkxODc4MjQyMSwxOTc5MzcxNTIsLTM2NT
+k5NzU5OSwxMjQzNTU4MTQ3LC01NTUxODg5NjUsMTAyMzMwNjU0
+M119
 -->
