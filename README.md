@@ -18,7 +18,8 @@ Implementing such a website will allow collectors across all experience levels t
 ### Purpose
 The Green Market aims to be an accessible platform for consumers from various backgrounds to use to buy or sell houseplants. 
 ### Functionality and Features
-The Green Market functions as a two-way marketplace that allows users to:
+### Sitemap
+### ScreenshotsThe Green Market functions as a two-way marketplace that allows users to:
 - create an account to store shipping information
 - add listings to sell your own plants
 - browse all listings added by yourself and other sellers
@@ -40,6 +41,7 @@ I used the following programs to develop my application:
  - Visual Studio Code
  - Stackedit.io
  - Figma
+ - 
  I personally coded using the following languages:
  - Ruby
  - HTML
@@ -240,5 +242,5 @@ I used Github's integrated project tracking to help organize my tasks and track 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDQ5NTUxMl19
+eyJoaXN0b3J5IjpbMTkxODc4MjQyMSwxNzAwNDk1NTEyXX0=
 -->
